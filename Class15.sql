@@ -1,0 +1,8 @@
+use sucos;
+ALTER TABLE tb_client ADD PRIMARY KEY (CPF);
+ALTER TABLE tb_client ADD COLUMN (DATA_NASCIMENTO DATE);
+INSERT INTO tb_client (CPF, NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO,
+	LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO) 
+		VALUES ('00308050407', 'Vinicios Limeira', 'Rua projetada, casa 10', 'Residencial Pinheiros',
+        'Vila Olímpia','Fortaleza' ,'Ceará', '68451110', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
+SELECT * FROM tb_client;
